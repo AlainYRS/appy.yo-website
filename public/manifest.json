@@ -1,0 +1,64 @@
+{
+    "name": "Appy.yo",
+    "short_name": "APPYYO",
+    "start_url": "/",
+    "description": "Appy.yo Progresive Web Application",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "en-US",
+    "id": "/",
+    "background_color": "#2F303A",
+    "orientation": "portrait-primary",
+    "theme_color": "#2F303A",
+    "prefer_related_applications": false,
+    "icons": [
+      {
+        "src": "/Icons/manifest_icons/Logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/Icons/manifest_icons/Logo192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/Icons/manifest_icons/Logo144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "/Icons/manifest_icons/Logo96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "/Icons/manifest_icons/Logo72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "/Icons/manifest_icons/Logo48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      },
+      {
+        "src": "/Icons/manifest_icons/MaskableLogo.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/Icons/manifest_icons/Background.png",
+        "type": "image/png",
+        "sizes": "1280x1024"
+      }
+    ],
+    "url_handlers": [
+      {
+        "origins": ""
+      }
+    ]
+  }
