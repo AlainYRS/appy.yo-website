@@ -42,11 +42,11 @@ export default function Home() {
           onClick={(e:any)=>HandleSignIn(e)}
         />
         <div id={styles.MainLinksMenu}>
-          <Link id={styles.NewestProject} className={styles.MainLink} href="/newestProject"><span>Newest Project</span></Link>
-          <Link id={styles.InnovationLab} className={styles.MainLink} href="/innovationLab"><span>Innovation Lab</span></Link>
-          <Link id={styles.ProfessionalServices} className={styles.MainLink} href="/professionalServices"><span>Professional Services</span></Link>
-          <Link id={styles.AboutUs} className={styles.MainLink} href="/aboutUs"><span>About Us</span></Link>
-          <Link id={styles.DigitalTransformation} className={styles.MainLink} href="/digitalTransformation"><span>Digital Transformation</span></Link>
+          <Link id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Newest Project</span></Link>
+          <Link id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
+          <Link id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
+          <Link id={styles.AboutUs} className={styles.MainLink} href="/AboutUs"><span>About Us</span></Link>
+          <Link id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
         </div>
       </main>
         {/*Footer Component*/}
