@@ -4,6 +4,9 @@
     margin: auto;
     position: relative;
 }
+.main{
+    display: grid;
+}
 #MainLinksMenu{
     display: grid;
     width: 50vw;
