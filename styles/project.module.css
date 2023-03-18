@@ -4,6 +4,7 @@
     margin: auto auto 2rem auto;
     text-align: center;
     background-color: rgb(var(--basecolor));
+    padding: 0 2rem;
 }
 .ServicesButton{
     align-self: center;
@@ -32,4 +33,22 @@
 .Img{
 	filter: drop-shadow(1px 1px 3px gray);
 	border-radius: 25px;
+}
+.article p {
+    margin-bottom: 1rem;
+	font-style: normal;
+	line-height: 1em;
+}
+.article{
+    text-align: left;
+}
+.article > h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px 7px white;
+    transition: 300ms;
+}
+.article > h1:hover{
+    text-shadow: 1px 1px 14px white;
 }

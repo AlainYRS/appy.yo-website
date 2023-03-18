@@ -16,6 +16,11 @@
     font-weight: 700;
     transition: var(--fastrans);
 }
+.ServicesButton:hover{
+    border: 1px solid rgb(var(--fontcolor));
+    color: rgb(var(--fontcolor));
+    background-color: rgb(var(--basecolor));
+}
 .ServicesText{
     width: 35%;
     margin: auto;
@@ -30,6 +35,25 @@
     text-align: center;
 }
 .Img{
-	filter: drop-shadow(1px 1px 3px gray);
+	filter: drop-shadow(1px 1px 7px gray);
 	border-radius: 25px;
+}
+.article{
+    text-align: left;
+    padding: 0 2rem;
+}
+.article > h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px 7px white;
+    transition: 300ms;
+}
+.article > h1:hover{
+    text-shadow: 1px 1px 14px white;
+}
+.article p {
+    margin-bottom: 1rem;
+	font-style: normal;
+	line-height: 1em;
 }

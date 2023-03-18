@@ -82,9 +82,11 @@ export default function AboutUs(){
                         menu: 'Digital Transformation',
                         link: '/DigitalTransformation'
                     },
+                    {
+                        menu: 'Get in Touch',
+                        link: '/GetInTouch'
+                    },
                 ]}
-                signin='Get In Touch'
-                onClick={(e:any)=>GetInTouch(e)}
             />
             <main className={styles.main}>
                 <div className={styles.Image}>

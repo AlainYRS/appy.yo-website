@@ -20,7 +20,7 @@ interface IHeadersMenu{
     menus?: IMenus[],
     LangsFlags?: IFlagLang[],
     signin?: string,
-    onClick: any,
+    onClick?: any,
 }
 
 function HandleLogin(elem:any){

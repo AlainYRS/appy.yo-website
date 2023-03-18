@@ -59,17 +59,37 @@ export default function ProfessionalServices(){
                         menu: 'Digital Transformation',
                         link: '/DigitalTransformation'
                     },
+                    {
+                        menu: 'Get in Touch',
+                        link: '/GetInTouch'
+                    },
                 ]}
-                signin='Get in Touch'
-                onClick={(e:any)=>HandleSignIn(e)}     
             />
             <main className={styles.main}>
-                <i id="PSTitle">Professional Services</i>
-                <p className={styles.ServicesText}>
-                    ...............................SERVICE...............................
-                    ...............................OFFERED...............................
-                    ..............................DESCRIPTION............................
-                </p>
+
+                <article className={styles.article}>
+                    <h1>Professional Services</h1>
+                    <p>
+                        Do you need a special talent on your team only for a short period of time?
+                    </p>
+                    <p>
+                        Are you struggling with an area and need improvement ?
+                    </p>
+                    <p>
+                        Possibly you have bad reviews and you are not sure how to improve?
+                    </p>
+                    <p>
+                        Professional services and process improvement is our niche.
+                        We are here to support you in your growth. Large companies struggle with the same issues - when they grow, a lot of processes need to be changed otherwise it results in bad quality, unhappy employees and even worst: bad reviews and public opinion.
+
+                    </p>
+                    <p>
+                        Appy.yo team has expertise in reviewing your current setup and provides you with detailed advice by giving you a full understanding of where improvements can happen and how to tackle them.
+                    </p>
+                    <p>
+                        Contact us to find out more about the talents we have or how to improve your processes
+                    </p>
+                </article>
                 <span className={styles.Image}>
                     <Image className={styles.Img} src="/Images/ProfesionalServices.jpeg" fill alt="Innovation_Lab"/>
                 </span>
@@ -77,7 +97,6 @@ export default function ProfessionalServices(){
             </main>
             {/*Footer Component*/}
             <FooterComp 
-                copyright= {'Appy.yo'}
                 classNames={''}
                 langs={{
                 developed: "Developed by",

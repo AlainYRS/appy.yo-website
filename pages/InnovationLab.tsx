@@ -58,9 +58,11 @@ export default function InnovationLab(){
                         menu: 'Digital Transformation',
                         link: '/DigitalTransformation'
                     },
+                    {
+                        menu: 'Get in Touch',
+                        link: '/GetInTouch'
+                    },
                 ]}
-                signin='Get in Touch'
-                onClick={(e:any)=>HandleSignIn(e)} 
             />
             <main className={styles.main}>
                 <article className={styles.article}>

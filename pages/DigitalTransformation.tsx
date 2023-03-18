@@ -59,59 +59,81 @@ export default function DigitalTransformation(){
                         menu: 'Digital Transformation',
                         link: '/DigitalTransformation'
                     },
+                    {
+                        menu: 'Get in Touch',
+                        link: '/GetInTouch'
+                    },
                 ]}
-                signin='Get in Touch'
-                onClick={(e:any)=>HandleSignIn(e)}      
             />
             <main className={styles.main}>
-                <article className={styles.article}>
-                    <h1>Digital Transformation</h1>
-                    <p>Price List</p>
-                    <p>We provide full support with different plans to suit your needs.</p>
+                <article className={styles.articleHead}>
+                    <h1>Digital transformation</h1>
                 </article>
+                <article className={styles.article}>
+                    <p>
+                        We work closely with you to make sure we understand your needs and goals. Our focus is not only on  the project but also supporting you on this journey.
+                    </p>
+                    <h2>
+                        Each project will follow the phase :
+                    </h2>
+                    <p>
+                        Design: combining research, set goals and needs into a visual representation to showcase how the end product will look. This is the area where we want to make sure this is exactly what you want. Review of the layout, colours and functionality. It’s important for us to spend time in this phase to capture all your comments and and answer any questions
+                    </p>
+                    <p>
+                        Build: once the design is approved we will move over to bringing your plans to reality.
+                    </p>
+                    <p>
+                        Test: full testing cycle to assure that you understand how it works and you are satisfied
+                    </p>
+                    <p>
+                        Delivery: once testing has passed provide the full product to you
+                    </p>
+                    <p>
+                        Support: the key to being successful is also the support. One month warranty period along with full support systems as monthly based plans. So you- can focus on your business will we do the backend work
+                    </p>
+                </article>
+                <p className={styles.aside}>
+                    We also offer subscriptions which will help you to offload the work to us so that you can focus on your product.
+                </p>
                 <div className={styles.packages}>
                     <div className={styles.package}>
-                        <h2>Basic Support</h2>
+                        <h2>Mini package: just need some support</h2>
                         <ul className={styles.Features}>
-                            <li className={styles.FeatInc}>Feature 1</li>
-                            <li className={styles.FeatInc}>...</li>
-                            <li className={styles.FeatInc}>Feature N</li>
-                            <li className={styles.FeatNotInc}>Feature Denied 1</li>
-                            <li className={styles.FeatNotInc}>...</li>
-                            <li className={styles.FeatNotInc}>Feature Denied N</li>
+                            <li className={styles.FeatInc}>$99</li>
+                            <li className={styles.FeatInc}>Limited social media updates 2 platforms </li>
+                            <li className={styles.FeatInc}>Limited Website updates </li>
+                            <li className={styles.FeatInc}>Process review</li>
                         </ul>
                     </div>
                     <div className={styles.package}>
-                        <h2>Basic Support</h2>
+                        <h2>Medium needs package: we support you with your strategy and setting you up for success</h2>
                         <ul className={styles.Features}>
-                            <li className={styles.FeatInc}>Feature 1</li>
-                            <li className={styles.FeatInc}>...</li>
-                            <li className={styles.FeatInc}>Feature N</li>
-                            <li className={styles.FeatInc}>Feature Denied 1</li>
-                            <li className={styles.FeatNotInc}>...</li>
-                            <li className={styles.FeatNotInc}>Feature Denied N</li>
+                            <li className={styles.FeatInc}>$299</li>
+                            <li className={styles.FeatInc}>Marketing plan </li>
+                            <li className={styles.FeatInc}>Social media posts 3 platforms </li>
+                            <li className={styles.FeatInc}>Website updates</li>
+                            <li className={styles.FeatInc}>Process review and advice </li>
                         </ul>
                     </div>
                     <div className={styles.package}>
-                        <h2>Basic Support</h2>
+                        <h2>Full support package: all the support you need.</h2>
                         <ul className={styles.Features}>
-                            <li className={styles.FeatInc}>Feature 1</li>
-                            <li className={styles.FeatInc}>...</li>
-                            <li className={styles.FeatInc}>Feature N</li>
-                            <li className={styles.FeatInc}>Feature Denied 1</li>
-                            <li className={styles.FeatInc}>...</li>
-                            <li className={styles.FeatInc}>Feature Denied N</li>
+                            <li className={styles.FeatInc}>$599</li>
+                            <li className={styles.FeatInc}>Detailed marketing plan</li>
+                            <li className={styles.FeatInc}>Social media posts multiple platforms </li>
+                            <li className={styles.FeatInc}>Website updates and promotional page creation</li>
+                            <li className={styles.FeatInc}>Process review, advise and implementation </li>
                         </ul>
                     </div>
                 </div>
                 <span className={styles.Image}>
                     <Image className={styles.Img} src="/Images/DigitalTransformation.jpeg" fill alt="Digital_Transformation"/>
                 </span>
-                <button className={styles.ServicesButton} id="ServNeeded">Fill you rdigital needs</button>
+                <p  className={styles.LastCont}>Contact us to discuss your digital transformation needs or customize your plan. </p>
+                <button className={styles.ServicesButton} id="ServNeeded">Fill your digital needs</button>
             </main>
             {/*Footer Component*/}
             <FooterComp 
-                copyright= {'Appy.yo'}
                 classNames={''}
                 langs={{
                 developed: "Developed by",
