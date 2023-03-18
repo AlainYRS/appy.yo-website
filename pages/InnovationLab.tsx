@@ -25,10 +25,10 @@ export default function InnovationLab(){
             </Head>
             <PagesHeadComp
                 data={{
-                    faviconURL: "/Icons/manifest_icons/appyyo.png", //URL of icon to be displayed besides the title tab.
-                    title: "Appy.yo® - Home", //Title to be displayed in the tab. In case of traslations needs to consider the marker and tag to be traslated, such as this sample.
-                    description: "", //Description to be read by SEO for this page
-                    keywords: "", //Keywords to be read by SEO for this page
+                    faviconURL: "/Icons/manifest_icons/appyyo.png",
+                    title: "Appy.yo® - Home",
+                    description: "",
+                    keywords: "",
                 }}
             />
             <HeaderComp 
@@ -83,7 +83,6 @@ export default function InnovationLab(){
             </main>
             {/*Footer Component*/}
             <FooterComp 
-                copyright= {'Appy.yo'}
                 classNames={''}
                 langs={{
                 developed: "Developed by",

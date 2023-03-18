@@ -1,25 +1,24 @@
 @charset "utf-8";
-/*
-	Project: Appy.yo
-   	Author: Prafulla Kalusinh Garasia 
-   	Date: 2023-02-19
-	Filename: external_Innovation Lab.css
-	Copyright: 2023-All rights reserved   
-*/
 .main{
     width: 100%;
     height: max-content;
-    margin: auto auto 2rem auto;
+    margin: auto;
+    padding: 2rem;
     text-align: center;
     background-color: rgb(var(--basecolor));
 }
 .article{
     text-align: left;
 }
-.article h1 {
+.article > h1{
     text-align: center;
+    padding: 1rem;
     font-size: 3rem;
-    text-transform: uppercase;
+    text-shadow: 1px 1px 7px white;
+    transition: 300ms;
+}
+.article > h1:hover{
+    text-shadow: 1px 1px 14px white;
 }
 .Image {
     position: relative;
@@ -70,26 +69,17 @@
     z-index: 3;
     transition: var(--fastrans);
 }
-.article button {
-	float: none;
+.main button {
 	color: black;
 	background-color: whitesmoke;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 20px;
 	text-transform: capitalize;
-	font-family: 'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	border-radius: 25px;
-	margin-left: 40%;
-	margin-bottom: 5%;
+	border-radius: 21px;
 }
-
 .article p {
-	margin: 2.5% 1%;
-	font-size: 1.5em;
-	color: hsl(0, 0%, 100%);
-	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
 	font-style: normal;
 	line-height: 1em;
 }

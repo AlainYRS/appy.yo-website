@@ -30,13 +30,13 @@
 .MenuButton{
     align-self: center;
     color: rgb(var(--fontcolor));
-    background-color: transparent;
-    padding: 7px;
     border-radius: 14px;
+    padding: 2px 5px;
     text-align: center;
     transition: var(--fastrans);
 	text-shadow: 2px 2px 8px #fffffff5;
     border: 1px solid transparent;
+    margin: 0 0.3rem;
 }
 .MenuButton:hover{
     border: 1px solid rgba(var(--basecolor), 0.3);

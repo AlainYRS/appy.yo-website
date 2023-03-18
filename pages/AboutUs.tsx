@@ -20,15 +20,15 @@ export default function AboutUs(){
         image:'/Images/AppyyoLogo.jpg',
         content:
         <>
-            <p className={styles.Description} style={{position: 'relative', textAlignLast:'initial'}}>We split our work into the following phases;</p><br/><br/>
-            <ul>
-                <li><b>Research:</b> In-depth look at the business, detailed discussions around needs and wants. Setting up goals.</li><br/>
+            <p className={styles.Description} style={{position: 'relative', textAlignLast:'initial'}}>We split our work into the following phases;</p><br/>
+            <ul  className={styles.ULDesc}>
+                <li><b>Research:</b> In-depth look at the business, detailed discussions around needs and wants. Setting up goals.</li>
                 <li><b>Design:</b> Combining research, set goals and needs into a visual representation to showcase how the end product will look. 
                 This is the area where we want to make sure this is exactly what you want.
-                We will Review of the layout, colors and functionality. Its important for us to spend time in this phase to capture all your comments and answer any questions.</li><br/>
-                <li><b>Build:</b>Once the design is approved we will move over to bringing your plans to reality.</li><br/>
-                <li> <b>Test:</b>Full testing cycle to assure that you understand how it works and you are satisfied.</li><br/>
-                <li><b>Delivery:</b>Once testing has passed we will provide the full product to you</li><br/>
+                We will Review of the layout, colors and functionality. Its important for us to spend time in this phase to capture all your comments and answer any questions.</li>
+                <li><b>Build:</b>Once the design is approved we will move over to bringing your plans to reality.</li>
+                <li> <b>Test:</b>Full testing cycle to assure that you understand how it works and you are satisfied.</li>
+                <li><b>Delivery:</b>Once testing has passed we will provide the full product to you</li>
                 <li><b>Support:</b> The key to being successful is also in the support. One month warranty period along
                 with full support systems as monthly based plans. So you can focus on your business will we do the backend work</li>
             </ul>
@@ -99,20 +99,20 @@ export default function AboutUs(){
                             title: 'About Us',
                             image:'/Images/AppyyoLogo.jpg',
                             content:
-                                <>
-                                    <p className={styles.Description} style={{position: 'relative', textAlignLast:'initial'}}>We split our work into the following phases;</p><br/><br/>
-                                    <ul>
-                                        <li><b>Research:</b> In-depth look at the business, detailed discussions around needs and wants. Setting up goals.</li><br/>
-                                        <li><b>Design:</b> Combining research, set goals and needs into a visual representation to showcase how the end product will look. 
-                                        This is the area where we want to make sure this is exactly what you want.
-                                        We will Review of the layout, colors and functionality. Its important for us to spend time in this phase to capture all your comments and answer any questions.</li><br/>
-                                        <li><b>Build:</b>Once the design is approved we will move over to bringing your plans to reality.</li><br/>
-                                        <li> <b>Test:</b>Full testing cycle to assure that you understand how it works and you are satisfied.</li><br/>
-                                        <li><b>Delivery:</b>Once testing has passed we will provide the full product to you</li><br/>
-                                        <li><b>Support:</b> The key to being successful is also in the support. One month warranty period along
-                                        with full support systems as monthly based plans. So you can focus on your business will we do the backend work</li>
-                                    </ul>
-                                </>,
+                            <>
+                                <p className={styles.Description} style={{position: 'relative', textAlignLast:'initial'}}>We split our work into the following phases;</p><br/>
+                                <ul  className={styles.ULDesc}>
+                                    <li><b>Research:</b> In-depth look at the business, detailed discussions around needs and wants. Setting up goals.</li>
+                                    <li><b>Design:</b> Combining research, set goals and needs into a visual representation to showcase how the end product will look. 
+                                    This is the area where we want to make sure this is exactly what you want.
+                                    We will Review of the layout, colors and functionality. Its important for us to spend time in this phase to capture all your comments and answer any questions.</li>
+                                    <li><b>Build:</b>Once the design is approved we will move over to bringing your plans to reality.</li>
+                                    <li> <b>Test:</b>Full testing cycle to assure that you understand how it works and you are satisfied.</li>
+                                    <li><b>Delivery:</b>Once testing has passed we will provide the full product to you</li>
+                                    <li><b>Support:</b> The key to being successful is also in the support. One month warranty period along
+                                    with full support systems as monthly based plans. So you can focus on your business will we do the backend work</li>
+                                </ul>
+                            </>,
                         })}>
                         <Image className={styles.IconSO} src={'/Images/about.png'} width={70} height={70} alt={'About Us'}/>
                     </div>

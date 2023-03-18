@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { lazy, useState, useEffect, useContext, useRef } from 'react';
+import React, {  useContext } from 'react';
 import styles from '@/styles/Home.module.css'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
 import GlobalContext from '@/complements/components/GlobalContextComp/GlobalContextComp'
@@ -29,10 +29,10 @@ export default function Home() {
       </Head>
       <PagesHeadComp
         data={{
-            faviconURL: "/Icons/manifest_icons/appyyo.png", //URL of icon to be displayed besides the title tab.
-            title: "Appy.yo® - Home", //Title to be displayed in the tab. In case of traslations needs to consider the marker and tag to be traslated, such as this sample.
-            description: "", //Description to be read by SEO for this page
-            keywords: "", //Keywords to be read by SEO for this page
+            faviconURL: "/Icons/manifest_icons/appyyo.png",
+            title: "Appy.yo® - Home",
+            description: "",
+            keywords: "",
         }}
       />
       <main className={styles.main}>
@@ -50,7 +50,6 @@ export default function Home() {
       </main>
         {/*Footer Component*/}
         <FooterComp 
-            copyright={'Appy.yo'}
             classNames={''}
             langs={{
               developed: "Developed by",
