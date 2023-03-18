@@ -41,7 +41,6 @@ export default function HeaderComp(props:IHeadersMenu){
                             </div>
                         </Link>
                 }
-                <div>
                     <div className={styles.MenusContainer}>
                         {props.menus?.map((menu:any, i:any)=>{
                                 return(
@@ -50,7 +49,6 @@ export default function HeaderComp(props:IHeadersMenu){
                             })
                         }
                     </div>
-                </div>
                 {props.signin && 
                     <button className={styles.SignInButton} onClick={props.onClick}>{props.signin}</button>
                 }

@@ -37,8 +37,12 @@ export default function Home() {
       />
       <main className={styles.main}>
         <HeaderComp 
-          signin='Get in Touch'
-          onClick={(e:any)=>HandleSignIn(e)}
+                menus={[
+                  {
+                      menu: 'Get in Touch',
+                      link: '/GetInTouch'
+                  },
+              ]}
         />
         <div id={styles.MainLinksMenu}>
           <Link id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Newest Project</span></Link>
@@ -46,6 +50,7 @@ export default function Home() {
           <Link id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
           <Link id={styles.AboutUs} className={styles.MainLink} href="/AboutUs"><span>About Us</span></Link>
           <Link id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
+          <Image id={styles.AbUsImg} src={'/Images/AppyyoCrop.png'} fill alt=""/>
         </div>
       </main>
         {/*Footer Component*/}

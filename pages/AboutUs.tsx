@@ -90,7 +90,7 @@ export default function AboutUs(){
             />
             <main className={styles.main}>
                 <div className={styles.Image}>
-                    <img className={styles.Img} src={Clicked.image} alt={Clicked.title}/>
+                    <Image className={styles.Img} src={Clicked.image} fill alt={Clicked.title}/>
                 </div>
                 <article className={styles.article}>
                     <h1 className={styles.Subtitle}>{Clicked.title}</h1>

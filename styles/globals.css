@@ -1,5 +1,5 @@
 :root {
-  --basecolor: 47,48,58; /*#2F303A*/
+  --basecolor: 44,44,58; /*#2F303A*/
   --fontcolor: 255,255,255;
   --fastrans: 300ms;
   --medtrans: 700ms;
@@ -28,7 +28,7 @@ body {
 
 html,
 body {
-  background-color: #2F303A;
+  background-color: rgb(var(--basecolor));
 	margin: 0px auto;
   max-width: 100vw;
   overflow-x: hidden;

@@ -70,10 +70,10 @@ export default function Project(){
                 <article className={styles.article}>
                     <h1 className={styles.NewProj}>WeVibe</h1>
                     <p>
-                        Dating apps offer a new way to connect with people but currently the replies sometimes are so slow. In theory dating apps are great but they don't work well in practice. People take too long to reply, we judge people by the picture and it's not a true connection.
+                        Dating apps offer a new way to connect with people but currently the replies sometimes are so slow. In theory dating apps are great but they don&apos;t work well in practice. People take too long to reply, we judge people by the picture and it&apos;s not a true connection.
                     </p>
                     <p>
-                        WeVibe allows you to connect with someone who meets your criteria, speak to them for 4 mins and if you connect you can continue the conversation. It’s really about the human connection.
+                        WeVibe allows you to connect with someone who meets your criteria, speak to them for 4 mins and if you connect you can continue the conversation. It&apos;s really about the human connection.
                     </p>
                 </article>
                 <span className={styles.Image}>
