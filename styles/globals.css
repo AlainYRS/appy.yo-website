@@ -42,20 +42,21 @@ main{
 
 
 body {
-	width: 90%;
+	width: 100%;
 	padding-left: 4.50%;
 	padding-right: 4.50%;
 	margin: 0px auto auto auto;
-	background-color: #2F303A;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 html,
 body {
+  background-color: #2F303A;
 	margin: 0px auto;
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: monospace;
 }
 
 body {
@@ -63,7 +64,20 @@ body {
   background-color: rgb(var(--basecolor));
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
+} */
+
+/* p{
+  letter-spacing: normal;
+  letter-spacing: 0.1px;
+  line-height:normal;
+  font-size: 18px;
 }
+h3{
+  font-size: 25px;
+}
+ul{
+  font-size: 16px;
+} */

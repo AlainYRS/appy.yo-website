@@ -37,7 +37,6 @@ export default function Home() {
       />
       <main className={styles.main}>
         <HeaderComp 
-          logo={'/Icons/manifest_icons/MaskableLogo.png'}
           signin='Get in Touch'
           onClick={(e:any)=>HandleSignIn(e)}
         />
@@ -51,7 +50,7 @@ export default function Home() {
       </main>
         {/*Footer Component*/}
         <FooterComp 
-            copyright= {'Appy.yo'}
+            copyright={'Appy.yo'}
             classNames={''}
             langs={{
               developed: "Developed by",

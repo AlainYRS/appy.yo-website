@@ -25,7 +25,7 @@ interface IHeadersMenu{
 
 function HandleLogin(elem:any){
     console.log(elem)
-    //AQUIVA Function de arranque de autenticación
+
 }
 
 export default function HeaderComp(props:IHeadersMenu){

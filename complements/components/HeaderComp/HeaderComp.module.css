@@ -1,14 +1,16 @@
 .Header{
+    width: 100%;
     display: grid;
-    grid-template-columns: 70px 1fr max-content max-content;
+    grid-template-columns: auto 1fr max-content max-content;
     grid-template-areas: 
         'Logo Menus Langs SignIn'
     ;
-    width: 100%;
+    min-height: 120px;
     gap: 2rem;
     position: relative;
     top: 0px;
     background-color: rgb(var(--basecolor));
+    justify-items:right;
 }
 .HeaderLogo{
     width: 140px;
@@ -31,6 +33,7 @@
     background-color: transparent;
     padding: 7px;
     border-radius: 14px;
+    text-align: center;
     transition: var(--fastrans);
 	text-shadow: 2px 2px 8px #fffffff5;
     border: 1px solid transparent;
@@ -54,6 +57,7 @@
     grid-area: SignIn;
 }
 .SignInButton{
+    width: max-content;
     align-self: center;
     border: 1px solid rgb(var(--basecolor));
     color: rgb(var(--basecolor));

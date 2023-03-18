@@ -54,7 +54,7 @@ function Footer(props:IFooter){
                 {props.copyright && (' ' + (props.langs?.copyright ? props.langs.copyright : 'copyright') +': ' + props.copyright + '.') }
                 {props.date && (' ' + (props.langs?.made ? props.langs.made : 'made') +': ' + props.date + '.')}
                 {props.version && (' ' + (props.langs?.version ? props.langs.version : 'version') +': ' + props.version + '.')}
-                    <a href="mailto:info@appyyo.com?subject = Feedback&body = Message">info@appyyo.com</a>
+                <a href="mailto:info@appyyo.com?subject = Feedback&body = Message">info@appyyo.com</a>
                 <div>
                     <ShareComp 
                         styles={{margin:"3.5px"}}
