@@ -1,44 +1,37 @@
 .main{
     display: grid;
-    grid-template-columns: 30% 70%;
+    padding: 1rem;
+    grid-template-columns: clamp(calc(100vh - 140px - 70px - 5rem),30%,30%) calc(70% - 3rem);
     grid-template-rows: calc(100vh - 140px - 70px - 5rem) max-content;
     height: auto;
-    gap: 1rem;
     grid-template-areas: 
         'Image   Description'
         'Image   IconsServOffer'
     ;
     width: 100%;
-    margin: 0rem auto 0rem auto;
-    background-color: transparent;
+    margin: 0rem auto;
 }
 .Image {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    padding: 1rem;
     grid-area: Image;
-    display: flex;
-    align-items: center;
+    position: relative;
+    width: 90%;
+    height: 90%;
     margin: auto;
-}
-.Img{
     border-radius: 50%;
-    width: 100%;
-    height: 60%;
+    overflow: hidden;
 }
 .article li{
     margin-bottom: 0.8rem;
 }
 .article{
-    text-align: left;
     grid-area: Description;
+    text-align: left;
+    padding: 0 1rem;
     overflow: auto;
 }
 .article > h1{
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem;
     font-size: 3rem;
     text-shadow: 1px 1px 7px white;
     transition: 300ms;
@@ -47,12 +40,35 @@
     text-shadow: 1px 1px 14px white;
 }
 #IconsServOffer{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
     grid-area: IconsServOffer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 .IconSO{
     position: relative;
     width:70px;
+}
+
+@media screen and (max-width:750px) and (orientation:portrait){
+    .main{
+        height: calc(100vh - 140px - 50px);
+        grid-template-columns: 1fr;
+        grid-template-rows:  50px auto 50px;
+        grid-template-areas: 
+            'Image'
+            'Description'
+            'IconsServOffer'
+        ;
+    }
+    .Image {
+        width: 70px;
+        height: 70px;
+        margin: 1rem;
+        opacity: 0.7;
+    }
+    .IconSO{
+        width:50px;
+        height: 50px;
+    }
 }

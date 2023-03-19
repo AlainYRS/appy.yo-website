@@ -1,24 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import Image from 'next/image';
-import React, {  useContext } from 'react';
+import React from 'react';
 import styles from '@/styles/Home.module.css'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
-import GlobalContext from '@/complements/components/GlobalContextComp/GlobalContextComp'
 import HeaderComp from '@/complements/components/HeaderComp/HeaderComp'
 import FooterComp from '@/complements/components/FooterComp/FooterComp'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  //------ User global context ------
-  const { Environment,UsrCookie,setUsrCookie}: any = useContext(GlobalContext)
-
-  function HandleSignIn(e:any){
-    console.log(e)
-  }
-
   return (
     <>
       <Head>
@@ -50,7 +39,7 @@ export default function Home() {
           <Link id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
           <Link id={styles.AboutUs} className={styles.MainLink} href="/AboutUs"><span>About Us</span></Link>
           <Link id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
-          <Image id={styles.AbUsImg} src={'/Images/AppyyoCrop.png'} fill alt=""/>
+          {/* <Image id={styles.AbUsImg} src={'/Images/AppyyoCrop.png'} fill alt=""/> */}
         </div>
       </main>
         {/*Footer Component*/}

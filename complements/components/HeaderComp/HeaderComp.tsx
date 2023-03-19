@@ -25,7 +25,6 @@ interface IHeadersMenu{
 
 function HandleLogin(elem:any){
     console.log(elem)
-
 }
 
 export default function HeaderComp(props:IHeadersMenu){
@@ -37,11 +36,14 @@ export default function HeaderComp(props:IHeadersMenu){
                 {props.logo && 
                         <Link href="/">
                             <div className={styles.HeaderLogo}>
-                                <Image src={props.logo} width={140} height={140} alt="appy.yo logo"/>
+                                <Image src={props.logo} fill alt="appy.yo logo"/>
                             </div>
                         </Link>
                 }
                     <div className={styles.MenusContainer}>
+                        <div className={styles.HidenMenus}>Appy.yo
+                            <Image src={'/Icons/MenuIcon.png'} width={35} height={35} alt="Menu Icon"/>
+                        </div>
                         {props.menus?.map((menu:any, i:any)=>{
                                 return(
                                     <a href={menu.link} className={styles.MenuButton} key={i}>{menu.menu}</a>

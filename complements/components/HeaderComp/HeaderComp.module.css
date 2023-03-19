@@ -13,12 +13,16 @@
     justify-items:right;
 }
 .HeaderLogo{
+    position: relative;
     width: 140px;
     height: 140px;
     border-radius: 14px;
     margin: 2px;
     overflow: hidden;
     grid-area: Logo;
+}
+.HidenMenus{
+    display: none;
 }
 .MenusContainer{
     grid-area: Menus;
@@ -79,4 +83,64 @@
     border: 1px solid rgb(var(--basecolor));
     color: rgb(var(--basecolor));
     background-color: rgb(var(--fontcolor));
+}
+@media screen and (max-width: 490px){
+    .Header{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'Logo Menus'
+        ;
+        min-height: 40px;
+    }
+    .HeaderLogo{
+        width: 35px;
+        height: 35px;
+        justify-content: start;
+        border: 1px solid red;
+        margin: 1px;
+        grid-area: Logo;
+    }
+    .HidenMenus{
+        border: 1px solid red;
+        display: block;
+        position: fixed;
+        width:35px;
+        height:35px;
+    }
+   .MenusContainer{
+        grid-area: Menus;
+        position: fixed;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 100%;
+        height: max-content;
+    }
+    .HidenMenus{
+        display: none;
+    }
+    .MenuButton{
+        align-self: right;
+        border-radius: 4px;
+        padding: 2.5px;
+        text-align: left;
+        border: 1px solid transparent;
+        margin: 0 0.3rem;
+    }
+    .MenuButton:active{
+        border: 1px solid rgba(var(--basecolor), 0.3);
+        color: rgb(var(--basecolor));
+        background-color: rgb(var(--fontcolor));
+    }
+    .MenuButton:last-of-type,
+    .SignInButton{
+        border-radius: 4px;
+        font-weight: 500;
+    }
+    .MenuButton:last-of-type:active,
+    .SignInButton:active{
+        border: 1px solid rgb(var(--basecolor));
+        color: rgb(var(--basecolor));
+        background-color: rgb(var(--fontcolor));
+    }
 }

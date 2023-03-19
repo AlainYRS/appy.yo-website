@@ -12,6 +12,8 @@ export default function Document() {
         <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="/Icons/manifest_icons/Logo96.png" />
         <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/Icons/manifest_icons/Logo144.png" />
         <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/Icons/manifest_icons/Logo192.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv='ScreenOrientation' content='autoRotate:disabled' />
       </Head>
       <body>
         <Main />
