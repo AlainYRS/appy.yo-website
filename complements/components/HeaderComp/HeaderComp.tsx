@@ -1,9 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './HeaderComp.module.css'
-import GlobalContext from '../GlobalContextComp/GlobalContextComp'
 
 interface IFlagLang{
     Lng: string,
@@ -23,9 +21,6 @@ interface IHeadersMenu{
     onClick?: any,
 }
 
-
-
-
 export default function HeaderComp(props:IHeadersMenu){
     const [DispMenu, setDispMenu] = useState(true)
 
@@ -35,6 +30,9 @@ export default function HeaderComp(props:IHeadersMenu){
 
     useEffect(() => {
         addEventListener('resize', ()=>{
+            window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
+        })
+        addEventListener('onpageshow', ()=>{
             window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
         })
     }, [])

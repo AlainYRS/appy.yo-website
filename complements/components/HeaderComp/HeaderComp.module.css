@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: auto 1fr max-content max-content;
     grid-template-areas: 
-        'Logo Menus Langs SignIn'
+    'Logo Menus Langs SignIn'
     ;
     min-height: 40px;
     gap: 2rem;
@@ -82,7 +82,7 @@
         grid-template-columns: 35px 1fr 35px;
         grid-template-rows: 40px;
         grid-template-areas:
-            'Logo Name IconMenu'
+        'Logo Name IconMenu'
         ;
         padding: 7px;
     }
@@ -92,9 +92,18 @@
         text-align: center;
         width: 100%;
     }
+    .HidenMenus{
+        display: block;
+        grid-area: IconMenu;
+        width: 35px;
+        height: 35px;
+        border-radius: 7px;
+    }
     .HeaderLogo{
         width: 35px;
         height: 35px;
+        margin: 2px;
+        overflow: hidden;
         border-radius: 7px;
         grid-area: Logo;
     }
@@ -112,6 +121,7 @@
         border-bottom: 1px solid rgba(var(--fontcolor),0.1);
         color: rgb(var(--basecolor));
         background-color: rgb(var(--basecolor));
+        /* background-color: red; */
     }
     .MenuButton{
         width: 100%;
@@ -124,8 +134,5 @@
     .MenuButton:last-of-type,
     .SignInButton{
         width: 100%;
-    }
-    .HidenMenus{
-        display: block;
     }
 }
