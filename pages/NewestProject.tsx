@@ -12,10 +12,6 @@ export default function NewestProject(){
   //------ User global context ------
   const { Environment,UsrCookie,setUsrCookie}: any = useContext(GlobalContext)
 
-  function HandleSignIn(e:any){
-    console.log(e)
-  }
-
     return (
         <>
             <Head>

@@ -2,7 +2,6 @@
 	display: grid;
 	gap: 5px;
   }
-
 .container label {
 	font-weight: bold;
 	display: block;
@@ -16,19 +15,16 @@
 	border: none;
     border-radius: 7px;
     border-bottom: 1px solid #ccc;
-}
-  
+}  
 .container input:focus,
 .container textarea:focus {
 	box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.1);
-  }
-  
+}  
 .contact-info {
 	float: left;
 	width: 50%;
 	margin-top: 20px;
-  }
- 
+}
 .container {
 	max-width: 600px;
 	margin: 0 auto;
@@ -37,7 +33,6 @@
 	border-radius: 5px;
 	float: right;
 	width: 50%;
-	margin: 20px 20px 30px 0;
 }
 .container button{
     width: 100%;
@@ -55,4 +50,18 @@
     border: 1px solid rgb(var(--basecolor));
     color: rgb(var(--basecolor));
     background-color: rgb(var(--fontcolor));
+}
+@media screen and (max-width: 490px) and (orientation:portrait){	
+	.contact-info {
+		margin: auto;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.container {
+		width: 100%;
+	}
+	.container button{
+		width: max-content;
+		margin: 1rem auto;
+	}
 }

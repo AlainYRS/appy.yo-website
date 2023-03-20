@@ -48,11 +48,6 @@
 .Features{
     list-style: none;
     }
-.ServicesText{
-    width: 35%;
-    margin: auto;
-    text-align: center;
-}
 .Image {
     position: relative;
     display: block;
@@ -67,7 +62,7 @@
 }
 .article p {
     margin-bottom: 1rem;
-	font-style: normal;
+	font-style: monospace;
 	line-height: 1em;
 }
 .ServicesButton{
@@ -103,4 +98,50 @@
 }
 .articleHead > h1:hover{
     text-shadow: 1px 1px 14px white;
+}
+@media screen and (max-width:490px) and (orientation:portrait) {
+    .main{
+        padding: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+        grid-template-areas: 
+            'articleHead'
+            'Comments1'
+            'Comments2'
+            'Packs'
+            'Image'
+            'LastCont'
+            'button'
+        ;
+    }
+    .aside{
+        text-align: center;
+    }
+    .LastCont{
+        padding: 2rem;
+    }
+    .package{
+        margin: 1rem auto;
+        width: 90%;
+        padding: 0.5rem 2rem;
+    }
+    .package > h2{
+        font-size: 2rem;
+    }
+    .Image {
+        width: 70vw;
+        height: 70vw;
+        margin: 2rem auto;
+    }
+    .article p {
+        text-align: center;
+        padding: 2rem;
+    }
+    .ServicesButton{
+        margin: 1rem auto;
+    }
+    .articleHead > h1{
+        text-align: center;
+        font-size: 5rem;
+    }
 }

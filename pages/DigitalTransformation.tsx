@@ -8,14 +8,6 @@ import GlobalContext from "@/complements/components/GlobalContextComp/GlobalCont
 import styles from "@/styles/digitalTransformation.module.css"
 
 export default function DigitalTransformation(){
-  //------ User global context ------
-  const { Environment,UsrCookie,setUsrCookie}: any = useContext(GlobalContext)
-
-  //------ Traslations component ------
-  function HandleSignIn(e:any){
-    console.log(e)
-  }
-
     return(
         <>
             <Head>

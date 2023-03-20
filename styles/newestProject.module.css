@@ -64,3 +64,30 @@
 	font-style: normal;
 	line-height: 1em;
 }
+@media screen and (max-width: 490px) and (orientation: portrait) {
+    .imagecontainer{
+        width: 100%;
+        flex-flow: column nowrap;
+    }
+    .Proj{
+        width: 100%;
+        padding: 2rem;
+    }
+    .Proj figcaption{
+        padding: 2rem;
+    }
+    .Image {
+        width: 35vw;
+        height: 35vw;
+        border-radius: 21px;
+    }
+    .article{
+        padding: 2rem 1rem;
+    }
+    .article > h1{
+        font-size: 5rem;
+    }
+    .article p {
+        font-style: monospace;
+    }
+}
