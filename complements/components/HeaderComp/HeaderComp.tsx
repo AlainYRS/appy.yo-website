@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -23,12 +23,17 @@ interface IHeadersMenu{
     onClick?: any,
 }
 
-function HandleLogin(elem:any){
-    console.log(elem)
-}
 
 export default function HeaderComp(props:IHeadersMenu){
-    const { Environment,UsrCookie,setUsrCookie}: any = useContext(GlobalContext)
+    const [DispMenu, setDispMenu] = useState(true)
+
+    function MenuDisplay(){
+        setDispMenu(!DispMenu)
+    }
+
+    addEventListener('resize', ()=>{
+        window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
+    })
 
     return (
         <>
@@ -40,20 +45,22 @@ export default function HeaderComp(props:IHeadersMenu){
                             </div>
                         </Link>
                 }
-                    <div className={styles.MenusContainer}>
-                        <div className={styles.HidenMenus}>Appy.yo
-                            <Image src={'/Icons/MenuIcon.png'} width={35} height={35} alt="Menu Icon"/>
-                        </div>
-                        {props.menus?.map((menu:any, i:any)=>{
+                <h1 className={styles.Name}>Appy.yo</h1>
+                {DispMenu &&
+                    <>
+                        <div className={styles.MenusContainer}>
+                            {props.menus?.map((menu:any, i:any)=>{
                                 return(
                                     <a href={menu.link} className={styles.MenuButton} key={i}>{menu.menu}</a>
-                                )
-                            })
-                        }
-                    </div>
-                {props.signin && 
-                    <button className={styles.SignInButton} onClick={props.onClick}>{props.signin}</button>
+                                    )
+                                })
+                            }
+                        </div>
+                    </>
                 }
+                <div className={styles.HidenMenus}>
+                    <Image src={'/Icons/MenuIcon.png'} width={35} height={35} alt="Menu Icon" onClick={()=>MenuDisplay()}/>
+                </div>
             </div>
             <hr/>
         </>
