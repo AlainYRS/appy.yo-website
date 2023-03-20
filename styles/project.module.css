@@ -80,3 +80,14 @@
         font-style: monospace;
     }
 }
+@media screen and (max-width: 700px) and (orientation:landscape) {
+    .Image {
+        border-radius: 35px;
+    }
+    .article{
+        padding: 1rem;
+    }
+    .article > h1{
+        font-size: 3rem;
+    }
+}

@@ -135,3 +135,26 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 700px) and (orientation:landscape) {
+    .Header{
+        gap: 0rem;
+    }
+    .HeaderLogo{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+    }
+    .MenuButton{
+        border-radius: 7px;
+        padding: 2px;
+        margin: auto;
+    }
+    .MenuButton:last-of-type,
+    .SignInButton{
+        padding: 5px;
+        margin: 5px;
+        border-radius: 7px;
+        font-weight: 600;
+    }
+}

@@ -3,6 +3,7 @@
     "short_name": "APPYYO",
     "start_url": "/",
     "description": "Appy.yo Progresive Web Application",
+    "author": "Alain Yosseph Rivera Sánchez",
     "display": "standalone",
     "dir": "auto",
     "lang": "en-US",

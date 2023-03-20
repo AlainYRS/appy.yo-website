@@ -61,7 +61,7 @@
 }
 .article p {
     margin-bottom: 1rem;
-	font-style: normal;
+	font-style: monospace;
 	line-height: 1em;
 }
 @media screen and (max-width: 490px) and (orientation: portrait) {
@@ -89,5 +89,18 @@
     }
     .article p {
         font-style: monospace;
+    }
+}
+@media screen and (max-width: 700px) and (orientation:landscape) {
+    .Image {
+        border-radius: 14px;
+    }
+    .article > h1{
+        font-size: 2rem;
+    }
+    .article p {
+        margin-bottom: 1rem;
+        font-style: monospace;
+        line-height: 1em;
     }
 }
