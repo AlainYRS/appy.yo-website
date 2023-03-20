@@ -130,4 +130,7 @@
         align-items: center;
         justify-content: center;
     }
+    #InnovationLab > span{
+        display: flex;
+    }
 }
