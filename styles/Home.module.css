@@ -39,6 +39,9 @@
 #AboutUs{
     grid-area: AboutUs;
 }
+#AbUsImg{
+    display: none;
+}
 #DigitalTransformation,
 #ProfessionalServices{
     width: 100%;
@@ -85,37 +88,41 @@
 }
 
 @media screen and (max-width:770px) and (orientation: portrait) {
+    #MainLinksMenu{
+        margin: auto;
+        background-image: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,max-content);
+        grid-template-areas: 
+            "Logo"
+            "AboutUs"
+            "NewProj"
+            "InnovLab"
+            "ProfServ"
+            "DigTrans"
+        ;
+    }    
     #AboutUs,
-    #NewestProject{
-        text-align: left;
-    }
+    #NewestProject,
     #DigitalTransformation,
-    #ProfessionalServices{
-        text-align: right;
+    #ProfessionalServices,
+    #InnovationLab,
+    #AbUsImg{
+        text-align: center;
+    }
+    #AbUsImg{
+        display: block;
+        position: fixed;
+        width: 30%;
+        height: 30%;
+        grid-area: Logo;
     }
     #DigitalTransformation > span,
-    #AboutUs > span{
-        height: 35%;
-    }
+    #AboutUs > span,
+    #InnovationLab> span,
     #ProfessionalServices > span,
     #NewestProject > span{
-        height: 70%;
-    }
-    #AboutUs > span,
-    #NewestProject > span
-    {
-        justify-content: left;
-    }
-    #ProfessionalServices > span,
-    #DigitalTransformation > span
-    {
-        justify-content: right;
-    }
-    .MainLink{
-        line-height: 2rem;
-    }
-    .MainLink > span{
-        padding: 3.5px;
-        font-size: 1.8rem;
+        height: max-content;
+        justify-content: center;
     }
 }
