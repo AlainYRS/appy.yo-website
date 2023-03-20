@@ -79,7 +79,7 @@ export default function Project(){
                     </p>
                 </article>
                 <span className={styles.Image}>
-                    <Image className={styles.Img} src="/Images/Wevibe.png" fill alt="Poste"/>
+                    <Image className={styles.Img} src="/Images/Wevibe.jpg" fill alt="Poste"/>
                 </span>
             </main>
             <FooterComp 

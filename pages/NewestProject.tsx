@@ -85,7 +85,7 @@ export default function NewestProject(){
                         <figure className={styles.Proj}>
                             <span className={styles.Image}>
                                 <Link href="/Shopful">
-                                    <Image className={styles.Img} src="/Images/Shopful.png" fill alt="Newest_Project"/>
+                                    <Image className={styles.Img} src="/Images/Shopful.jpg" fill alt="Newest_Project"/>
                                 </Link>
                             </span>
                             <figcaption><h2>Shopful</h2></figcaption>
@@ -93,7 +93,7 @@ export default function NewestProject(){
                         <figure className={styles.Proj}>
                             <span className={styles.Image}>
                                 <Link href="/Wevibe">
-                                    <Image className={styles.Img} src="/Images/Wevibe.png" fill alt="Newest_Project"/>
+                                    <Image className={styles.Img} src="/Images/Wevibe.jpg" fill alt="Newest_Project"/>
                                 </Link>
                             </span>
                             <figcaption><h2>WeVibe</h2></figcaption>

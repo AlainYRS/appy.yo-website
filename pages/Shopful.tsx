@@ -83,7 +83,7 @@ export default function Project(){
                     </p>
                 </article>
                 <span className={styles.Image}>
-                    <Image className={styles.Img} src="/Images/Shopful.png" fill alt="Poste"/>
+                    <Image className={styles.Img} src="/Images/Shopful.jpg" fill alt="Poste"/>
                 </span>
             </main>
             <FooterComp 

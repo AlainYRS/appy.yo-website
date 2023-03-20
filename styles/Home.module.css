@@ -10,7 +10,7 @@
     background-size: contain;
     background-position-y: 0rem;
     grid-template-columns: minmax(0px,1fr) minmax(0px,2rem) 1fr minmax(0px,2rem) minmax(0px,1fr);
-    grid-template-rows: max-content repeat(4,calc((100vh - 140px - 6rem)/4));
+    grid-template-rows: max-content repeat(4,calc((100vh - 140px - 2rem)/4));
     grid-template-areas: 
         "InnovLab InnovLab InnovLab InnovLab InnovLab"
         "NewProj Logo Logo Logo ProfServ"
@@ -93,7 +93,6 @@
     width: 100vw;
     height: 50vh;
 }
-
 @media screen and (max-width:770px) and (orientation: portrait) {
     #MainLinksMenu{
         background-image: none;
@@ -132,5 +131,10 @@
     }
     #InnovationLab > span{
         display: flex;
+    }
+}
+@media screen and (max-width: 700px) and (orientation:landscape) {
+    #MainLinksMenu{
+        grid-template-rows: max-content repeat(4,calc((100vh - 120px)/4));
     }
 }
