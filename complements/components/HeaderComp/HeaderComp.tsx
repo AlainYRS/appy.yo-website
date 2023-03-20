@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -24,6 +24,8 @@ interface IHeadersMenu{
 }
 
 
+
+
 export default function HeaderComp(props:IHeadersMenu){
     const [DispMenu, setDispMenu] = useState(true)
 
@@ -31,9 +33,11 @@ export default function HeaderComp(props:IHeadersMenu){
         setDispMenu(!DispMenu)
     }
 
-    addEventListener('resize', ()=>{
-        window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
-    })
+    useEffect(() => {
+        addEventListener('resize', ()=>{
+            window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
+        })
+    }, [])
 
     return (
         <>
