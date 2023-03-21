@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import Image from 'next/image';
 import React from 'react';
 import styles from '@/styles/Home.module.css'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
 import HeaderComp from '@/complements/components/HeaderComp/HeaderComp'
-import FooterComp from '@/complements/components/FooterComp/FooterComp'
 
 export default function Home() {
   return (
@@ -27,14 +25,9 @@ export default function Home() {
         }}
       />
       <main className={styles.main}>
-        <HeaderComp 
-                menus={[
-                  {
-                      menu: 'Get in Touch',
-                      link: '/GetInTouch'
-                  },
-              ]}
-        />
+        <div className={styles.GetTouchCont}>
+          <a href={'/GetInTouch'} className={styles.MenuButton}>Get In Touch</a>
+        </div>
         <div id={styles.MainLinksMenu}>
           <Link id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Projects</span></Link>
           <Link id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
