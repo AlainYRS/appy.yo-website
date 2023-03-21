@@ -22,9 +22,10 @@ interface IHeadersMenu{
 }
 
 export default function HeaderComp(props:IHeadersMenu){
-    const [DispMenu, setDispMenu] = useState(true)
+    const [DispMenu, setDispMenu] = useState<boolean>(true)
 
-    function MenuDisplay(){
+    function NewLink(){
+        window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
         setDispMenu(!DispMenu)
     }
 
@@ -32,25 +33,22 @@ export default function HeaderComp(props:IHeadersMenu){
         addEventListener('resize', ()=>{
             window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
         })
-        addEventListener('onpageshow', ()=>{
-            window.innerWidth <= 490 ? setDispMenu(false) : setDispMenu(true)
-        })
-    }, [])
+    })
 
     return (
         <>
             <div className={styles.Header}>
                 {props.logo && 
-                        <Link href="/">
-                            <div className={styles.HeaderLogo}>
-                                <Image src={props.logo} fill alt="appy.yo logo"/>
-                            </div>
-                        </Link>
+                    <Link href="/">
+                        <div className={styles.HeaderLogo}>
+                            <Image src={props.logo} fill alt="appy.yo logo"/>
+                        </div>
+                    </Link>
                 }
                 <h1 className={styles.Name}>Appy.yo</h1>
                 {DispMenu &&
                     <>
-                        <div className={styles.MenusContainer} style={{justifyContent: 'end'}} >
+                        <div id='MenusContainer' className={styles.MenusContainer} style={{justifyContent: 'end'}} >
                             {props.menus?.map((menu:any, i:any)=>{
                                 return(
                                     <a href={menu.link} className={styles.MenuButton} key={i}>{menu.menu}</a>
@@ -61,7 +59,7 @@ export default function HeaderComp(props:IHeadersMenu){
                     </>
                 }
                 <div className={styles.HidenMenus}>
-                    <Image src={'/Icons/MenuIcon.png'} width={35} height={35} alt="Menu Icon" onClick={()=>MenuDisplay()}/>
+                    <Image src={'/Icons/MenuIcon.png'} width={35} height={35} alt="Menu Icon" onClick={()=>NewLink()}/>
                 </div>
             </div>
         </>

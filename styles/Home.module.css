@@ -159,6 +159,9 @@
             "LeftB Logo RightB"
         ;
     }
+    /* #MainLinksMenu{
+        grid-template-rows: max-content repeat(2,calc(65vh - 100px)) 1fr;
+    } */
     #InnovationLab > span,
     #ProfessionalServices > span,
     #AboutUs > span,
