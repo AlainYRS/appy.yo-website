@@ -50,7 +50,7 @@ export default function ProfessionalServices(){
                         link: '/InnovationLab'
                     },
                     {
-                        menu: 'Newest Project',
+                        menu: 'Newest Projects',
                         link: '/NewestProject'
                     },
                     {

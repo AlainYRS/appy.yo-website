@@ -97,12 +97,10 @@
         grid-area: IconMenu;
         width: 35px;
         height: 35px;
-        border-radius: 7px;
     }
     .HeaderLogo{
         width: 35px;
         height: 35px;
-        margin: 2px;
         overflow: hidden;
         border-radius: 7px;
         grid-area: Logo;
@@ -111,28 +109,20 @@
         display: flex;
         flex-flow: column nowrap;
         position: absolute;
-        right: 0px;
         top: 40px;
-        padding: 2rem;
-        width: max-content;
-        height: max-content;
-        border-radius: 0 0 0 14px;
-        border-left: 1px solid rgba(var(--fontcolor),0.1);
-        border-bottom: 1px solid rgba(var(--fontcolor),0.1);
-        color: rgb(var(--basecolor));
+        height: calc(100vh - 50px);
+        overflow-y: hidden;
         background-color: rgb(var(--basecolor));
+        padding: 0 0 calc(100vh - 40px - 7*4rem);
     }
-    .MenuButton{
+    .MenuButton:last-of-type,.MenuButton{
         width: 100%;
-        border-radius: 7px;
+        position: relative;
+        background-color: rgb(var(--basecolor));
+        color: rgb(var(--fontcolor));
+        top: 0px;
+        border-radius: 0px;
         padding: 1rem;
-        border-radius: 14px;
-        background-color: rgba(var(--fontcolor),0.1);
-        margin: 0.7rem;
-    }
-    .MenuButton:last-of-type,
-    .SignInButton{
-        width: 100%;
     }
 }
 @media screen and (max-width: 700px) and (orientation:landscape) {

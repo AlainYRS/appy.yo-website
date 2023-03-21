@@ -51,7 +51,7 @@ export default function Project(){
                         link: '/InnovationLab'
                     },
                     {
-                        menu: 'Newest Project',
+                        menu: 'Newest Projects',
                         link: '/NewestProject'
                     },
                     {

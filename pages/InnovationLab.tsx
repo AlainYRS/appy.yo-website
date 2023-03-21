@@ -49,7 +49,7 @@ export default function InnovationLab(){
                         link: '/InnovationLab'
                     },
                     {
-                        menu: 'Newest Project',
+                        menu: 'Newest Projects',
                         link: '/NewestProject'
                     },
                     {

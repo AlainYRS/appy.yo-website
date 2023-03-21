@@ -9,80 +9,73 @@
     background-position: center;
     background-size: contain;
     background-position-y: 0rem;
-    grid-template-columns: minmax(0px,1fr) minmax(0px,2rem) 1fr minmax(0px,2rem) minmax(0px,1fr);
-    grid-template-rows: max-content repeat(4,calc((100vh - 140px - 2rem)/4));
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: max-content repeat(2,calc(50vh - 100px)) 1fr;
     grid-template-areas: 
-        "InnovLab InnovLab InnovLab InnovLab InnovLab"
-        "NewProj Logo Logo Logo ProfServ"
-        "NewProj Logo Logo Logo ProfServ"
-        "AboutUs Logo Logo Logo DigTrans"
-        "AboutUs Logo Logo Logo DigTrans"
+        "DigTrans DigTrans DigTrans"
+        "InnovLab Logo ProfServ"
+        "AboutUs Logo NewProj"
+        "LeftB Logo RightB"
     ;
 }
-#InnovationLab{
-    grid-area: InnovLab;
+#DigitalTransformation{grid-area: DigTrans}
+#NewestProject{grid-area: NewProj}
+#AboutUs{grid-area: AboutUs}
+#AbUsImg{grid-area: Logo}
+#ProfessionalServices{grid-area: ProfServ}
+#DigitalTransformation{grid-area: DigTrans}
+#DigitalTransformation{
     height: 100%;
     text-align: center;
     align-self: baseline;
     z-index: 1;
 }
 #AboutUs,
-#NewestProject{
-    width: 100%;
-    height: 100%;
-    text-align: right;
-    z-index: 1;
-}
-#NewestProject{
-    grid-area: NewProj;
-}
-#AboutUs{
-    grid-area: AboutUs;
-}
-#AbUsImg{
-    display: none;
-    grid-area: Logo;
-}
-#DigitalTransformation,
+#InnovationLab,
+#NewestProject,
 #ProfessionalServices{
     width: 100%;
     height: 100%;
+    z-index: 1;
+}
+#NewestProject,
+#ProfessionalServices{
     text-align: left;
-    z-index: 1;
 }
-#ProfessionalServices{
-    grid-area: ProfServ;
+#AboutUs,
+#InnovationLab{
+    text-align: right;
 }
-#DigitalTransformation{
-    grid-area: DigTrans;
-}
-#DigitalTransformation > span,
+#InnovationLab > span,
 #ProfessionalServices > span,
 #AboutUs > span,
 #NewestProject > span{
     display: flex;
     width: 100%;
-    height: 25%;
+    height: 100%;
+}
+#InnovationLab > span,
+#ProfessionalServices > span{
     align-items: center;
 }
 #AboutUs > span,
+#NewestProject > span{
+    align-items: top;
+}
+#AboutUs > span,
+#InnovationLab > span,
+#ProfessionalServices > span,
 #NewestProject > span
 {
-    justify-content: right;    
-}
-#ProfessionalServices > span,
-#DigitalTransformation > span
-{
-    justify-content: left;
+    justify-content: center;
 }
 .MainLink{
-    line-height: 3.5rem;
+    line-height: 3rem;
 }
 .MainLink > span{
     color: rgb(var(--fontcolor));
     transition: var(--fastrans);
-    padding: 7px;
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 .MainLink > span:hover{
     text-shadow: 0px 0px 35px white;
@@ -93,48 +86,26 @@
     width: 100vw;
     height: 50vh;
 }
+
 @media screen and (max-width:770px) and (orientation: portrait) {
     #MainLinksMenu{
-        background-image: none;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,max-content);
-        grid-template-areas:
-        "Logo"
-        "AboutUs"
-        "NewProj"
-        "InnovLab"
-        "ProfServ"
-        "DigTrans"
-        ;
+        grid-template-rows: max-content repeat(2,calc(40vh - 100px)) 1fr;
     }
-    #AbUsMainLink{
-        display: block;
-    }
-    #AbUsImg{
-        position: fixed;
-        width: 100%;
-        height: 50%;
-        display: block;
-    }
-    #InnovationLab{
-        height: 100%;
-    }
-    #DigitalTransformation > span,
-    #ProfessionalServices > span,
     #InnovationLab > span,
+    #ProfessionalServices > span,
     #AboutUs > span,
     #NewestProject > span{
-        height: 100%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    #InnovationLab > span{
-        display: flex;
+        height: 50%;
     }
 }
 @media screen and (max-width: 700px) and (orientation:landscape) {
     #MainLinksMenu{
-        grid-template-rows: max-content repeat(4,calc((100vh - 120px)/4));
+        grid-template-rows: max-content repeat(2,calc(65vh - 100px)) 1fr;
+    }
+    #InnovationLab > span,
+    #ProfessionalServices > span,
+    #AboutUs > span,
+    #NewestProject > span{
+        height: 70%;
     }
 }

@@ -50,7 +50,7 @@ export default function HeaderComp(props:IHeadersMenu){
                 <h1 className={styles.Name}>Appy.yo</h1>
                 {DispMenu &&
                     <>
-                        <div className={styles.MenusContainer}>
+                        <div className={styles.MenusContainer} style={{justifyContent: 'end'}} >
                             {props.menus?.map((menu:any, i:any)=>{
                                 return(
                                     <a href={menu.link} className={styles.MenuButton} key={i}>{menu.menu}</a>
@@ -64,7 +64,6 @@ export default function HeaderComp(props:IHeadersMenu){
                     <Image src={'/Icons/MenuIcon.png'} width={35} height={35} alt="Menu Icon" onClick={()=>MenuDisplay()}/>
                 </div>
             </div>
-            <hr/>
         </>
     )
 }

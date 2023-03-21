@@ -1,12 +1,10 @@
-import React, { useContext, useState } from "react";
-import GlobalContext from "@/complements/components/GlobalContextComp/GlobalContextComp";
+import React, { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import HeaderComp from "@/complements/components/HeaderComp/HeaderComp";
 import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp";
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import styles from '@/styles/aboutUs.module.css'
-import { Content } from "next/font/google";
 
 interface IClicked{
     title: string
@@ -34,10 +32,6 @@ export default function AboutUs(){
             </ul>
         </>,
     })
-
-    function GetInTouch(e:any){
-
-    }
 
     return (
         <>
@@ -73,7 +67,7 @@ export default function AboutUs(){
                         link: '/InnovationLab'
                     },
                     {
-                        menu: 'Projects',
+                        menu: 'Newest Projects',
                         link: '/NewestProject'
                     },
                     {
