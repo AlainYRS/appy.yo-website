@@ -73,9 +73,9 @@
     padding: 7px;
     margin: 7px;
     border-radius: 9px;
-    /* font-weight: 700; */
     transition: var(--fastrans);
     grid-area: button;
+    font-size: 0.8rem;
     width: max-content;
     margin: auto;
 }

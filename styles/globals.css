@@ -89,11 +89,13 @@ nav .MenuLogo{
 @media (max-width: 991px){
   nav .navbar-collapse.collapse{
     overflow: hidden;
+    border: none;
   }
   nav .navbar-collapse.active{
       height: 100vh !important;
       text-align: center;
-  }
+      border: none;
+    }
   nav .nav-item{
     border-radius: 0px;
   }
