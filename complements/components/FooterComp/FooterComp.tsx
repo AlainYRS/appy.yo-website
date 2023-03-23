@@ -69,7 +69,7 @@ function Footer(props:IFooter){
                     />
                     <a href="https://www.instagram.com/appy.yo/">
                         {/* <img src={'./Icons/instaIcon.png'} style={{borderRadius:'8px'}} width={30} alt={'Instagram'} /> */}
-                        <Image src={'/Icons/InstaIcon.png'} style={{borderRadius:'8px'}} width={30} height={30} alt={'Instagram'}/>
+                        <Image src={'/Icons/InstaIcon.png'} style={{borderRadius:'50px'}} width={30} height={30} alt={'Instagram'}/>
                     </a>
                 </div>
             </div>
