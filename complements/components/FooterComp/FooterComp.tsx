@@ -24,6 +24,7 @@
 
 import React, { useContext } from 'react'
 import styles from './FooterComp.module.css'
+import Image from 'next/image'
 
 //Imported complements from other components
 import ShareComp from '@/complements/components/ShareComp/ShareComp'
@@ -67,7 +68,8 @@ function Footer(props:IFooter){
                         }}
                     />
                     <a href="https://www.instagram.com/appy.yo/" className="fa fa-instagram">
-                        <img src={'./Icons/instaIcon.png'} style={{borderRadius:'8px'}} width={30} alt={'Instagram'} />
+                        {/* <img src={'./Icons/instaIcon.png'} style={{borderRadius:'8px'}} width={30} alt={'Instagram'} /> */}
+                        <Image src={'/Icons/instaIcon.png'} style={{borderRadius:'8px'}} width={30} height={30} alt={'Instagram'}/>
                     </a>
                 </div>
             </div>
