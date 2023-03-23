@@ -85,22 +85,6 @@ nav .nav-item:last-of-type > a{
 }
 nav .MenuLogo{
   width:90px;
-  border: none
-}
-.nav{
-  border: none
-}
-.navbar-toggler{
-  border: none
-}
-.border{
-  border: none
-}
-.border-info{
-  border: none
-}
-.text-info{
-  border: none
 }
 @media (max-width: 991px){
   nav .navbar-collapse.collapse{
@@ -117,6 +101,8 @@ nav .MenuLogo{
     border-radius: 0px;
   }
   nav .MenuLogo{
-    width:30px;
+    filter: drop-shadow(1px 1px 3px gray);
+    border: 1px solid rgba(210,210,210,.2);
+    width: 30px;
   }
 }
