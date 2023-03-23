@@ -28,11 +28,11 @@ export default function Home() {
           <a href={'/GetInTouch'} className={styles.MenuButton}>Get In Touch</a>
         </div>
         <div id={styles.MainLinksMenu}>
-          <Link id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Projects</span></Link>
-          <Link id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
-          <Link id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
-          <Link id={styles.AboutUs} className={styles.MainLink} href="/AboutUs"><span>About Us</span></Link>
-          <Link id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Projects</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.AboutUs} className={styles.MainLink} href="/AboutUs"><span>About Us</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
         </div>
       </main>
     </>
