@@ -60,16 +60,15 @@ function Footer(props:IFooter){
                         styles={{margin:"3.5px"}}
                         IconSize={28}
                         facebook={{
-                            url:'"https://on.natgeo.com/2zHaNup"'
+                            url:'"https://www.facebook.com/appy.yo5"'
                         }}
                         linkedin={{
-                            url:'"https://on.natgeo.com/2zHaNup"'
-                        }}
-                        whatsapp={{
-                            title:'Hola',
-                            url:'"https://on.natgeo.com/2zHaNup"'
+                            url:'"https://www.linkedin.com/company/appy-yo/"'
                         }}
                     />
+                    <a href="https://www.instagram.com/appy.yo/" className="fa fa-instagram">
+                        <img src={'./Icons/instagramIcon.png'} width={30} alt={'Instagram'} />
+                    </a>
                 </div>
             </div>
         </>
