@@ -73,7 +73,7 @@
     padding: 7px;
     margin: 7px;
     border-radius: 9px;
-    font-weight: 700;
+    /* font-weight: 700; */
     transition: var(--fastrans);
     grid-area: button;
     width: max-content;
