@@ -59,9 +59,13 @@ nav .navbar-collapse.collapse{
 }
 nav .MenuLogo{
   /* border: 1px solid rgba(210,210,210,.2); */
-  border-radius: 10px;
+  border-radius: 7px;
   margin: 0px;
-  filter: drop-shadow(1px 1px 3px gray);
+  filter:sepia(10%);
+  /* filter: opacity(70%); */
+  /* filter: blur(70%); */
+  filter: drop-shadow(1px 1px 1px gray);
+  /* border: 1px solid white; */
 }
 nav .nav-item{
   border-radius: 12px;
