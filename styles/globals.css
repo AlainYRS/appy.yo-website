@@ -58,13 +58,13 @@ nav .navbar-collapse.collapse{
   display: none;
 }
 nav .MenuLogo{
-  /* border: 1px solid rgba(210,210,210,.2); */
   border-radius: 7px;
   margin: 0px;
   filter:sepia(10%);
+  border: 1px solid rgba(210,210,210,.2);
   /* filter: opacity(70%); */
   /* filter: blur(70%); */
-  filter: drop-shadow(1px 1px 1px gray);
+  /* filter: drop-shadow(1px 1px 1px gray); */
   /* border: 1px solid white; */
 }
 nav .nav-item{
