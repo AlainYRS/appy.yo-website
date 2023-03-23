@@ -5,6 +5,7 @@ import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp"
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import styles from '@/styles/aboutUs.module.css'
 import {HeaderCompBoots} from '@/complements/components/HeaderComp/HeaderCompBoots';
+import ShowTitle from "@/complements/components/ShowTitle/ShowTitle";
 
 interface IClicked{
     title: string
@@ -13,6 +14,8 @@ interface IClicked{
 }
 
 export default function AboutUs(){
+    const [TitleVisible, setTitleVisible] = useState<any>(null)
+
     const[Clicked,setClicked] = useState<IClicked>({
         title: 'About Us',
         image:'/Images/AppyyoLogo.jpg',
@@ -80,7 +83,12 @@ export default function AboutUs(){
                                 </ul>
                             </>,
                         })}>
-                        <Image className={styles.IconSO} src={'/Images/about.png'} width={70} height={70} alt={'About Us'}/>
+                        <label htmlFor="IconAbout" id={styles.SelectREstateLogo}
+                            onMouseOver={e => { setTitleVisible({Title:"About Us", XCoord: e.currentTarget.getBoundingClientRect().right, YCoord: e.currentTarget.getBoundingClientRect().top }) }}
+                            onMouseLeave={e => { setTitleVisible(null) }}
+                        >
+                            <Image id="IconAbout" className={styles.IconSO} src={'/Images/about.png'} width={70} height={70} alt={'About Us'}/>
+                        </label>
                     </div>
                     <div className={styles.ServOffered} onClick={()=>setClicked({
                             title: 'Experience',
@@ -90,7 +98,13 @@ export default function AboutUs(){
                                 stakeholders meeting the needs and goals of very small companies to enterprise level
                                 organizations.</p> ,
                         })}>
-                        <Image className={styles.IconSO} src={'/Images/exprience1.png'} width={70} height={70} alt={'Experience'}/>
+
+                        <label htmlFor="IconExperience" id={styles.SelectREstateLogo}
+                            onMouseOver={e => { setTitleVisible({Title:"Experience", XCoord: e.currentTarget.getBoundingClientRect().right, YCoord: e.currentTarget.getBoundingClientRect().top }) }}
+                            onMouseLeave={e => { setTitleVisible(null) }}
+                        >
+                            <Image id="IconExperience" className={styles.IconSO} src={'/Images/exprience1.png'} width={70} height={70} alt={'Experience'}/>
+                        </label>
                     </div>
                     <div className={styles.ServOffered} onClick={()=>setClicked({
                             title: 'Professional',
@@ -98,7 +112,12 @@ export default function AboutUs(){
                             content:
                                 <p>Professional: Organized and in a professional manner working with you towards your goals.</p>,
                         })}>
-                        <Image className={styles.IconSO} src={'/Images/pro.png'} width={70} height={70} alt={'Professional'}/>
+                        <label htmlFor="Professional" id={styles.SelectREstateLogo}
+                            onMouseOver={e => { setTitleVisible({Title:"Professional", XCoord: e.currentTarget.getBoundingClientRect().right, YCoord: e.currentTarget.getBoundingClientRect().top }) }}
+                            onMouseLeave={e => { setTitleVisible(null) }}
+                        >
+                            <Image id="Professional" className={styles.IconSO} src={'/Images/pro.png'} width={70} height={70} alt={'Professional'}/>
+                        </label>                            
                     </div>
                     <div className={styles.ServOffered} onClick={()=>setClicked({
                             title: 'Collaboration',
@@ -107,7 +126,12 @@ export default function AboutUs(){
                                 <p>Collaboration (instead of work closely) : We work closely with you to walk you through each 
                                     step and make sure you feel informed and comfortable on this journey.</p>,
                         })}>
-                        <Image className={styles.IconSO} src={'/Images/colla.png'} width={70} height={70} alt={'Collaboration'}/>
+                        <label htmlFor="IconCollaboration" id={styles.SelectREstateLogo}
+                            onMouseOver={e => { setTitleVisible({Title:"Collaboration", XCoord: e.currentTarget.getBoundingClientRect().right, YCoord: e.currentTarget.getBoundingClientRect().top }) }}
+                            onMouseLeave={e => { setTitleVisible(null) }}
+                        >
+                            <Image id="IconCollaboration" className={styles.IconSO} src={'/Images/colla.png'} width={70} height={70} alt={'Collaboration'}/>
+                        </label>
                     </div>
                     <div className={styles.ServOffered} onClick={()=>setClicked({
                             title: 'Timely Manner',
@@ -116,7 +140,12 @@ export default function AboutUs(){
                                 <p>Timely manner: We understand that your business is dependent on these projects. We work with your 
                                     schedule to set clear timelines and align to your deadlines.</p>,
                         })}>
-                        <Image className={styles.IconSO} src={'/Images/time.png'} width={70} height={70} alt={'Timely Manner'}/>
+                        <label htmlFor="IconTime" id={styles.SelectREstateLogo}
+                            onMouseOver={e => { setTitleVisible({Title:"Time", XCoord: e.currentTarget.getBoundingClientRect().right, YCoord: e.currentTarget.getBoundingClientRect().top }) }}
+                            onMouseLeave={e => { setTitleVisible(null) }}
+                        >
+                            <Image id="IconTime" className={styles.IconSO} src={'/Images/time.png'} width={70} height={70} alt={'Timely Manner'}/>
+                        </label>
                     </div>
                     <div className={styles.ServOffered} onClick={()=>setClicked({
                             title: 'Organization',
@@ -125,7 +154,12 @@ export default function AboutUs(){
                                 <p>Organization: Our organizational skills will provide you with a focused and clear road on
                                 delivering your needs.</p>,
                         })}>
-                        <Image className={styles.IconSO} src={'/Images/organize1.png'} width={70} height={70} alt={'Organization'}/>
+                        <label htmlFor="IconOrganization" id={styles.SelectREstateLogo}
+                            onMouseOver={e => { setTitleVisible({Title:"Organization", XCoord: e.currentTarget.getBoundingClientRect().right, YCoord: e.currentTarget.getBoundingClientRect().top }) }}
+                            onMouseLeave={e => { setTitleVisible(null) }}
+                        >
+                            <Image id="IconOrganization" className={styles.IconSO} src={'/Images/organize1.png'} width={70} height={70} alt={'Organization'}/>
+                        </label>
                     </div>
                 </div>
             </main>
@@ -138,6 +172,7 @@ export default function AboutUs(){
                 version: "version",
                 }}
             />
+            {TitleVisible !== null && <ShowTitle TitleConfig={TitleVisible} />}
         </>
     )
 }
