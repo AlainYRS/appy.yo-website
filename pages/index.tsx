@@ -19,8 +19,9 @@ export default function Home() {
       </Head>
       <PagesHeadComp
         data={{
-            faviconURL: "/Icons/manifest_icons/appyyo.png",
-            title: "Appy.yo® - Home",
+            // faviconURL: "/Icons/manifest_icons/appyyo.png",
+            faviconURL: "/Images/logo.png",
+            title: "Appy.yo - Home",
             description: "",
             keywords: "",
         }}
