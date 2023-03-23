@@ -3,6 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 import styles from '@/styles/Home.module.css'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
+import FooterComp from "@/complements/components/FooterComp/FooterComp";
+
 
 export default function Home() {
   return (
@@ -35,6 +37,16 @@ export default function Home() {
           <Link  style={{textDecoration:'none'}} id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
         </div>
       </main>
+      <FooterComp 
+          classNames={''}
+          langs={{
+          developed: "Developed by",
+          copyright: "Copyright",
+          made: "made",
+          version: "version",
+          }}
+          styles={{backgroundColor: 'rgb(43,44,56)'}}
+      />
     </>
   )
 }

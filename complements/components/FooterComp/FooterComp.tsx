@@ -40,7 +40,7 @@ interface IFooter{
     copyright?: string,
     date?: string,
     version?: string,
-    styles?: {},
+    styles?: any,
     classNames?: string
     langs?: ILangsFooter
 }
