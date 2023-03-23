@@ -1,3 +1,6 @@
+.main{
+    background-color: rgb(43,44,56);
+}
 .GetTouchCont{
     width: 100%;
     display: flex;
