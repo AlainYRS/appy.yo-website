@@ -5,7 +5,7 @@
     width: 100%;
     background-color: rgb(var(--basecolor));
     font-weight: 300;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(var(--fontcolor),.1);
     font-size: 1rem;
     font-family: monospace;
     color: whitesmoke;
