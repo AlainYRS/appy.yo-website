@@ -44,7 +44,7 @@ export default function InnovationLab(){
                 <span className={styles.Image}>
                     <Image className={styles.Img} src="/Images/InnovationLab.jpeg" fill alt="Innovation_Lab"/>
                 </span>
-                <button className={styles.ServicesButton} id="ServNeeded">Submit Your ideas Here</button>
+                <a href={'/GetInTouch'} className={styles.ServicesButton} id="ServNeeded">Submit Your ideas Here</a>
             </main>
             {/*Footer Component*/}
             <FooterComp 
