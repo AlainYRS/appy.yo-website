@@ -62,14 +62,11 @@ nav .MenuLogo{
   margin: 0px;
   filter:sepia(10%);
   border: 1px solid rgba(210,210,210,.2);
-  /* filter: opacity(70%); */
-  /* filter: blur(70%); */
-  /* filter: drop-shadow(1px 1px 1px gray); */
-  /* border: 1px solid white; */
 }
 nav .nav-item{
   border-radius: 12px;
   overflow: hidden;
+  margin: 0 0.5rem;
 }
 nav .nav-link:hover{
   border-radius: 12px;
