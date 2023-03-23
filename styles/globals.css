@@ -61,7 +61,7 @@ nav .MenuLogo{
   /* border: 1px solid rgba(210,210,210,.2); */
   border-radius: 10px;
   margin: 0px;
-  filter: opacity(70%);
+  filter: drop-shadow(1px 1px 3px gray);
 }
 nav .nav-item{
   border-radius: 12px;
