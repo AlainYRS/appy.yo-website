@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
+import React  from "react";
 import Image from "next/image";
 import Head from "next/head";
 import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp";
-import HeaderComp from "@/complements/components/HeaderComp/HeaderComp";
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
-import GlobalContext from "@/complements/components/GlobalContextComp/GlobalContextComp";
 import styles from "@/styles/digitalTransformation.module.css"
+import {HeaderCompBoots} from '@/complements/components/HeaderComp/HeaderCompBoots';
 
 export default function DigitalTransformation(){
     return(
@@ -26,39 +25,7 @@ export default function DigitalTransformation(){
                     keywords: "", //Keywords to be read by SEO for this page
                 }}
             />
-            <HeaderComp 
-                logo={'/Icons/manifest_icons/MaskableLogo.png'}
-                menus={[
-                    {
-                        menu: 'Home',
-                        link: '/'
-                    },
-                    {
-                        menu: 'About Us',
-                        link: '/AboutUs'
-                    },
-                    {
-                        menu: 'Innovation Lab',
-                        link: '/InnovationLab'
-                    },
-                    {
-                        menu: 'Newest Projects',
-                        link: '/NewestProject'
-                    },
-                    {
-                        menu: 'Professional Services',
-                        link: '/ProfessionalServices'
-                    },
-                    {
-                        menu: 'Digital Transformation',
-                        link: '/DigitalTransformation'
-                    },
-                    {
-                        menu: 'Get in Touch',
-                        link: '/GetInTouch'
-                    },
-                ]}
-            />
+            <HeaderCompBoots />
             <main className={styles.main}>
                 <article className={styles.articleHead}>
                     <h1>Digital transformation</h1>

@@ -1,17 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import Link from "next/link";
-import GlobalContext from "@/complements/components/GlobalContextComp/GlobalContextComp";
 import Image from "next/image";
 import Head from "next/head";
-import HeaderComp from "@/complements/components/HeaderComp/HeaderComp";
 import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp";
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import styles from '@/styles/newestProject.module.css'
+import {HeaderCompBoots} from '@/complements/components/HeaderComp/HeaderCompBoots';
 
 export default function NewestProject(){
-  //------ User global context ------
-  const { Environment,UsrCookie,setUsrCookie}: any = useContext(GlobalContext)
-
     return (
         <>
             <Head>
@@ -30,39 +26,7 @@ export default function NewestProject(){
                     keywords: "", //Keywords to be read by SEO for this page
                 }}
             />
-            <HeaderComp 
-                logo={'/Icons/manifest_icons/MaskableLogo.png'}
-                menus={[
-                    {
-                        menu: 'Home',
-                        link: '/'
-                    },
-                    {
-                        menu: 'About Us',
-                        link: '/AboutUs'
-                    },
-                    {
-                        menu: 'Innovation Lab',
-                        link: '/InnovationLab'
-                    },
-                    {
-                        menu: 'Newest Projects',
-                        link: '/NewestProject'
-                    },
-                    {
-                        menu: 'Professional Services',
-                        link: '/ProfessionalServices'
-                    },
-                    {
-                        menu: 'Digital Transformation',
-                        link: '/DigitalTransformation'
-                    },
-                    {
-                        menu: 'Get in Touch',
-                        link: '/GetInTouch'
-                    },
-                ]}
-            />
+            <HeaderCompBoots />
             <main>
                 <article className={styles.article}>
                     <h1 className={styles.NewProj}>Newest Projects</h1>

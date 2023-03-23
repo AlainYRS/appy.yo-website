@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import HeaderComp from "@/complements/components/HeaderComp/HeaderComp";
 import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp";
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import styles from '@/styles/GetInTouch.module.css'
+import {HeaderCompBoots} from '@/complements/components/HeaderComp/HeaderCompBoots';
 
 export default function GetinTouch(){
     return (
@@ -24,39 +24,7 @@ export default function GetinTouch(){
                     keywords: "", //Keywords to be read by SEO for this page
                 }}
             />
-            <HeaderComp 
-                logo={'/Icons/manifest_icons/MaskableLogo.png'}
-                menus={[
-                    {
-                        menu: 'Home',
-                        link: '/'
-                    },
-                    {
-                        menu: 'About Us',
-                        link: '/AboutUs'
-                    },
-                    {
-                        menu: 'Innovation Lab',
-                        link: '/InnovationLab'
-                    },
-                    {
-                        menu: 'Newest Project',
-                        link: '/NewestProject'
-                    },
-                    {
-                        menu: 'Professional Services',
-                        link: '/ProfessionalServices'
-                    },
-                    {
-                        menu: 'Digital Transformation',
-                        link: '/DigitalTransformation'
-                    },
-                    {
-                        menu: 'Get in Touch',
-                        link: '/GetInTouch'
-                    },
-                ]}
-            />
+            <HeaderCompBoots />
             <main>
                 <div className={styles.container}>
                     <form action="#" method="post">

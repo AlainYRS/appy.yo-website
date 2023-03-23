@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 import styles from '@/styles/Home.module.css'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
-import HeaderComp from '@/complements/components/HeaderComp/HeaderComp'
 
 export default function Home() {
   return (

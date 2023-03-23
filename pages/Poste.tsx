@@ -1,21 +1,12 @@
-import React, { useContext } from "react";
-import GlobalContext from "@/complements/components/GlobalContextComp/GlobalContextComp";
+import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import HeaderComp from "@/complements/components/HeaderComp/HeaderComp";
 import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp";
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import styles from '@/styles/project.module.css'
+import {HeaderCompBoots} from '@/complements/components/HeaderComp/HeaderCompBoots';
 
 export default function Project(){
-  //------ User global context ------
-  const { Environment,UsrCookie,setUsrCookie}: any = useContext(GlobalContext)
-
- 
-  function HandleSignIn(e:any){
-    console.log(e)
-  }
-
 
     return (
         <>
@@ -35,40 +26,7 @@ export default function Project(){
                     keywords: "", //Keywords to be read by SEO for this page
                 }}
             />
-            <HeaderComp 
-                logo={'/Icons/manifest_icons/MaskableLogo.png'}
-                menus={[
-                    {
-                        menu: 'Home',
-                        link: '/'
-                    },
-                    {
-                        menu: 'About Us',
-                        link: '/AboutUs'
-                    },
-                    {
-                        menu: 'Innovation Lab',
-                        link: '/InnovationLab'
-                    },
-                    {
-                        menu: 'Newest Projects',
-                        link: '/NewestProject'
-                    },
-                    {
-                        menu: 'Professional Services',
-                        link: '/ProfessionalServices'
-                    },
-                    {
-                        menu: 'Digital Transformation',
-                        link: '/DigitalTransformation'
-                    },
-                    {
-                        menu: 'Get in Touch',
-                        link: '/GetInTouch'
-                    },
-                ]}
-            />
-
+            <HeaderCompBoots />
             <main className={styles.main}>
                 <article className={styles.article}>
                     <h1 className={styles.NewProj}>Poste</h1>

@@ -9,12 +9,13 @@
     align-self: center;
     color: rgb(var(--basecolor));
     background-color: rgb(var(--fontcolor));
-    padding: 7px;
-    margin: 7px;
-    border-radius: 35px;
+    padding: 9px 5px;
+    margin: 0.7rem;
+    border-radius: 7px;
     right: 0px;
-    font-weight: 700;
     transition: var(--fastrans);
+    font-size: 0.8rem;
+    text-decoration: none;
 }
 #MainLinksMenu{
     width: 100%;

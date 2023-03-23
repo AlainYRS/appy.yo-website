@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
-import HeaderComp from "@/complements/components/HeaderComp/HeaderComp";
 import PagesHeadComp from "@/complements/components/PagesHeadComp/PagesHeadComp";
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import styles from '@/styles/aboutUs.module.css'
+import {HeaderCompBoots} from '@/complements/components/HeaderComp/HeaderCompBoots';
 
 interface IClicked{
     title: string
@@ -51,39 +51,7 @@ export default function AboutUs(){
                     keywords: "", //Keywords to be read by SEO for this page
                 }}
             />
-            <HeaderComp 
-                logo={'/Icons/manifest_icons/MaskableLogo.png'}
-                menus={[
-                    {
-                        menu: 'Home',
-                        link: '/'
-                    },
-                    {
-                        menu: 'About Us',
-                        link: '/AboutUs'
-                    },
-                    {
-                        menu: 'Innovation Lab',
-                        link: '/InnovationLab'
-                    },
-                    {
-                        menu: 'Newest Projects',
-                        link: '/NewestProject'
-                    },
-                    {
-                        menu: 'Professional Services',
-                        link: '/ProfessionalServices'
-                    },
-                    {
-                        menu: 'Digital Transformation',
-                        link: '/DigitalTransformation'
-                    },
-                    {
-                        menu: 'Get in Touch',
-                        link: '/GetInTouch'
-                    },
-                ]}
-            />
+            <HeaderCompBoots />
             <main className={styles.main}>
                 <div className={styles.Image}>
                     <Image className={styles.Img} src={Clicked.image} fill alt={Clicked.title}/>
