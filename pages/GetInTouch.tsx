@@ -25,17 +25,20 @@ export default function GetinTouch(){
                 }}
             />
             <HeaderCompBoots />
-            <main>
+            <main className={styles.main}>
                 <div className={styles.container}>
-                    <form action="#" method="post">
+                    <article className={styles.articleHead}>
+                        <h1>Contact Us</h1>
+                    </article>
+                    <form action="#" method="post" className={styles.form}>
                         <label htmlFor="name">Name:*</label>
                         <input autoFocus type="text" placeholder="Please enter your First Name " id="name" name="name" required />
-                        <label htmlFor="address">Address</label>
-                        <textarea id="address" name="address"></textarea>
+                        {/* <label htmlFor="address">Address</label>
+                        <textarea id="address" name="address"></textarea> */}
                         <label htmlFor="email">Email Address:*</label>
                         <input type="email" placeholder="Please enter your Email " id="email" name="email" required />
-                        <label htmlFor="phone">Phone *</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                        {/* <label htmlFor="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/> */}
                         <label htmlFor="subject">Subject:</label>
                         <input type="text" id="subject" name="subject" />
                         <label htmlFor="msg">Message:</label>
