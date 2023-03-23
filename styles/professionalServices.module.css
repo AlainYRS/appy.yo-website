@@ -12,7 +12,7 @@
     background-color: rgb(var(--fontcolor));
     padding: 7px;
     margin: 7px;
-    border-radius: 35px;
+    border-radius: 9px;
     font-weight: 700;
     transition: var(--fastrans);
 }

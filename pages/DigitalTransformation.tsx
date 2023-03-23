@@ -91,7 +91,7 @@ export default function DigitalTransformation(){
                     <Image className={styles.Img} src="/Images/DigitalTransformation.jpeg" fill alt="Digital_Transformation"/>
                 </span>
                 <p  className={styles.LastCont}>Contact us to discuss your digital transformation needs or customize your plan. </p>
-                <button className={styles.ServicesButton} id="ServNeeded">Fill your digital needs</button>
+                <a href={'/GetInTouch'} className={styles.ServicesButton} id="ServNeeded">Fill your digital needs</a>
             </main>
             {/*Footer Component*/}
             <FooterComp 

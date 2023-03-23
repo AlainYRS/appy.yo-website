@@ -40,7 +40,7 @@ export default function ProfessionalServices(){
                 <span className={styles.Image}>
                     <Image className={styles.Img} src="/Images/ProfesionalServices.jpeg" fill alt="Innovation_Lab"/>
                 </span>
-                <button className={styles.ServicesButton} id="ServNeeded">Describe the services you need</button>
+                <a href={'/GetInTouch'} className={styles.ServicesButton} id="ServNeeded">Describe the services you need</a>
             </main>
             {/*Footer Component*/}
             <FooterComp 
