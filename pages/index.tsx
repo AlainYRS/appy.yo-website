@@ -4,6 +4,7 @@ import React from 'react';
 import styles from '@/styles/Home.module.css'
 import PagesHeadComp from '@/complements/components/PagesHeadComp/PagesHeadComp'
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <div className={styles.GetTouchCont}>
           <a href={'/GetInTouch'} className={styles.MenuButton}>Get In Touch</a>
         </div>
+        <div id={styles.Logo}><Image src="/Images/logo.png" alt="Appy.yo Logo" fill/></div>
         <div id={styles.MainLinksMenu}>
           <Link  style={{textDecoration:'none'}} id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Projects</span></Link>
           <Link  style={{textDecoration:'none'}} id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
