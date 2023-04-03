@@ -33,10 +33,10 @@ export default function Home() {
         </div>
         <div id={styles.Logo}><Image src="/Images/logo.png" alt="Appy.yo Logo" fill/></div>
         <div id={styles.MainLinksMenu}>
-          <Link  style={{textDecoration:'none'}} id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Projects</span></Link>
-          <Link  style={{textDecoration:'none'}} id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
-          <Link  style={{textDecoration:'none'}} id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
           <Link  style={{textDecoration:'none'}} id={styles.AboutUs} className={styles.MainLink} href="/AboutUs"><span>About Us</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.InnovationLab} className={styles.MainLink} href="/InnovationLab"><span>Innovation Lab</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.NewestProject} className={styles.MainLink} href="/NewestProject"><span>Projects</span></Link>
+          <Link  style={{textDecoration:'none'}} id={styles.ProfessionalServices} className={styles.MainLink} href="/ProfessionalServices"><span>Professional Services</span></Link>
           <Link  style={{textDecoration:'none'}} id={styles.DigitalTransformation} className={styles.MainLink} href="/DigitalTransformation"><span>Digital Transformation</span></Link>
         </div>
       </main>
